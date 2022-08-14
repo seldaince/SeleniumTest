@@ -1,0 +1,81 @@
+Selenium Class 2
+
+We will interact inside of the page in this class
+
+What is a WebElement?
+-- anything we see on the web page is considered to be a webelement
+   e.g buttons, textboxes (where you type), checkboxes, links
+-- each and every element has an uniqueness and attribute behind the page
+-- when ever we want to interact with the page we need to right click and click inspect on the page
+   to interact with the elements behind the screens
+-- we will see a lot of codes and this is HTML
+
+HTML?
+-- HyperText Markup Language (will help us to work with each element when using selenium)
+-- when ever we inspect this window (with HTML language) will popup and it's called DOM
+
+What is DOM?
+-- DOM Stands for Document Object Model. It is the browser's internal view of the webpage
+-- Also called as Developer's tools or dev tools
+
+Why is it called DOM?
+Document --> a simple html document which represents the page we are inspecting
+Object --> any new line in HTML is considered to be an Object
+Model --> how the page is structured (blueprint) - it is just a layout of the HTML
+
+How to tell new line in HTML?
+-- It is expandable you will see HTML and then head and body.
+-- When moving your mouse on the body on the DOM page is getting selected
+-- The body is the top of the structure and has a huge object in there because it has an
+   <opening and closing>
+-- There are more objects inside the body object that is why it's huge
+
+When ever you want to interact with a specific element, on the top left corner there is a
+cuercial (square box) that will highlight the specific element when you move you mouse and it
+will automatically show the line on the DOM. If it is a login button you need to click on it
+
+Locator
+-- is an address or a position of a webelement on the webpage
+-- is used to locate or identify webelements on the webpage we want to interact with
+
+8 Locators:
+- ID
+- Name
+- TagName
+- xpath
+- LinkText
+- PartialLinkText
+- CssSelectors
+- ClassName
+
+Why do we need so many locators?
+-- developers may not provide all the locators for all the elements
+-- some locators may have duplicate values in different nodes
+-- some locators may not be applicable for the elements we are looking for
+e.g linktext and partialLinktext are only used for links
+
+"a" tag is also called an anchor which indicates it is a link
+
+if 2 or more elements have same attributes and attribute values,
+selenium will only interact with the first element it locates
+
+-- Anything we see with a value on the DOM it is an attribute/locator in selenium
+-- Anything we see with purple is the tag name
+
+methods used:
+-- findElement() use one of the locators after findElement() such as -> By.id() , By.name() ,ect
+--
+
+HW
+navigate to https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22
+fill out the form
+click on register
+close the browser
+
+navigate to fb.com
+click on create new account
+fill up all the textboxes
+click on sign up button
+close the pop up
+close the browser
+
